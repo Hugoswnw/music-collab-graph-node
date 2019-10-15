@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>French rap</title>
+    <link rel="stylesheet" href="/reset.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="col m1">
+        <button id="stepButton" class="btn waves-effect waves-light" onclick="nextStep()">Next step</button>
+      </div>
+      <div class="col m11 valign-wrapper">
+        <div class="progress">
+              <div id="stepBar" class="determinate" style="width: 100%"></div>
+          </div>
+      </div>
+    </div>
+    <div id="graph"></div>
+    <div id="tooltip"></div>
+  </body>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="/visu.js"></script>
